@@ -112,7 +112,7 @@ void loop() {
     // .
   }
 
-  // 割り込みフラグをリセットし、INT_STATUS バイトを取得
+  // 割り込みフラグをリセットし、INT_STATUS バイトを取得(ステータスを読み取るやつ)
   mpuInterrupt = false;
   mpuIntStatus = mpu.getIntStatus();
 
